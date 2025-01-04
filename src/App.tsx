@@ -7,6 +7,7 @@ import { Navbar } from '@/components/Navbar';
 import { projects } from "../src/userData";
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <AboutSection />
           <section id="projects" className="container mx-auto px-4 py-20">
             <div className="max-w-4xl mx-auto">
+              <Skills />
               <Education />
               <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-white via-gray-400 to-gray-600 text-transparent bg-clip-text">
                 Featured Projects

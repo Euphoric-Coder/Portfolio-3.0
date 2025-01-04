@@ -1,22 +1,23 @@
+import { GraduationCap } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const educationData = [
-  {
-    degree: "Bachelor's in Data Science & App.",
-    institution: "Indian Institute of Technology, Madras",
-    year: "2020-2022",
-    description: "Specialized in Artificial Intelligence and Machine Learning",
-  },
+//   {
+//     degree: "Bachelor's in Data Science & Appl.",
+//     institution: "Indian Institute of Technology, Madras",
+//     year: "2024-2027",
+//     description: "Specialized in Artificial Intelligence and Machine Learning",
+//   },
   {
     degree: "Bachelor's in Computer Science",
     institution: "Birla Institute of Technology and Science, Pilani",
-    year: "2016-2020",
+    year: "2023-2027",
     description: "Graduated with honors, focused on Web Technologies",
   },
   {
     degree: "High School Diploma",
-    institution: "Tech High School",
-    year: "2012-2016",
+    institution: "M.P. Birla Foundation Hr. Sec School",
+    year: "2009-2023",
     description: "Computer Science major with distinction",
   },
 ];
@@ -35,7 +36,7 @@ const Education = () => {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="flex-1 md:text-right md:pr-8 order-2 md:order-1">
                   {index % 2 === 0 && (
-                    <Card className="bg-black/50 border-gray-800">
+                    <Card className="bg-black/50 border-gray-800 rounded-3xl">
                       <CardContent className="p-6">
                         <h3 className="font-bold text-xl mb-2">{edu.degree}</h3>
                         <p className="text-gray-400">{edu.institution}</p>
@@ -46,7 +47,9 @@ const Education = () => {
                   )}
                 </div>
                 <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2">
-                  <div className="w-3 h-3 bg-primary rounded-full" />
+                  <div className="w-9 h-9 bg-gradient-to-br from-gray-400 via-gray-500 to-gray-700 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-white" />
+                  </div>
                 </div>
                 <div className="flex-1 md:pl-8 order-2">
                   {index % 2 === 1 && (

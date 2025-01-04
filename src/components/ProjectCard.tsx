@@ -99,7 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <motion.span
                 key={tagIndex}
                 whileHover={{ scale: 1.05 }}
-                className="px-3 py-1 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 hover:shadow-md hover:shadow-gray-500/50 transition"
+                className="px-3 py-1 bg-gray-900/70 text-gray-300 rounded-full text-sm hover:bg-gray-700 hover:shadow-md hover:shadow-gray-500/50 transition"
               >
                 {tag}
               </motion.span>
