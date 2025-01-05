@@ -1,5 +1,5 @@
 import { Badge } from "./ui/badge";
-import { Card, CardContent } from "./ui/card";
+import { Card } from "@/components/ui/card";
 
 const skillsData = {
   "Frontend Development": [
@@ -49,23 +49,23 @@ const skillsData = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16">
-      <div className="container px-4 md:px-6">
+    <section id="skills" className="container mx-auto px-4 py-20">
+      <div className="max-w-5xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-4xl font-extrabold tracking-tighter text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-gray-400">
+        <h2 className="text-4xl font-extrabold text-center mb-12 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-transparent bg-clip-text">
           Skills
         </h2>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 gap-8">
-          {Object.entries(skillsData).map(([category, skills]) => (
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-2 gap-10">
+          {Object.entries(skillsData).map(([category, skills], index) => (
             <Card
-              key={category}
-              className="border border-gray-700 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              key={index}
+              className="p-8 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl shadow-md hover:shadow-lg hover:border-gray-600 transition-all duration-300"
             >
-              <CardContent className="p-6">
+              <div className="flex flex-col items-start">
                 {/* Skill Category Heading */}
-                <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600">
+                <h3 className="text-2xl font-semibold mb-4 bg-gradient-to-r from-white via-gray-300 to-gray-500 text-transparent bg-clip-text">
                   {category}
                 </h3>
                 {/* Skill Badges */}
@@ -74,13 +74,13 @@ const Skills = () => {
                     <Badge
                       key={skill}
                       variant="secondary"
-                      className="bg-gray-800/60 text-gray-200 px-3 py-1 rounded-full hover:bg-gray-600 hover:scale-105 cursor-pointer transition-all duration-300"
+                      className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full hover:bg-gray-600 hover:scale-105 cursor-pointer transition-all duration-300"
                     >
                       {skill}
                     </Badge>
                   ))}
                 </div>
-              </CardContent>
+              </div>
             </Card>
           ))}
         </div>

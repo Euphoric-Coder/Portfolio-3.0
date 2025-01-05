@@ -1,13 +1,13 @@
-import { LinkedinIcon, Mail, GithubIcon } from 'lucide-react';
+import { LinkedinIcon, Mail, GithubIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AboutSection } from '@/components/AboutSection';
-import ProjectCard from '@/components/ProjectCard';
-import { HeroSection } from '@/components/HeroSection';
-import { Navbar } from '@/components/Navbar';
+import { AboutSection } from "@/components/AboutSection";
+import ProjectCard from "@/components/ProjectCard";
+import { HeroSection } from "@/components/HeroSection";
+import { Navbar } from "@/components/Navbar";
 import { projects } from "../src/userData";
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Skills from './components/Skills';
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -21,10 +21,11 @@ function App() {
           {/* Add padding for navbar */}
           <HeroSection />
           <AboutSection />
-          <section id="projects" className="container mx-auto px-4 py-20">
-            <div className="max-w-4xl mx-auto">
+          <section className="container mx-auto px-4 py-20">
+            <div className="max-w-6xl mx-auto">
               <Skills />
               <Education />
+              <div id="projects" className="mb-20"></div>
               <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-white via-gray-400 to-gray-600 text-transparent bg-clip-text">
                 Featured Projects
               </h2>

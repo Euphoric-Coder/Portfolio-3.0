@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
           />
           {/* Action Buttons */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
             <div className="flex gap-4 mb-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -78,7 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Card Content */}
         <div className="p-6">
           {/* Title */}
-          <h3 className="text-xl font-bold text-white mb-3">
+          <h3 className="text-2xl font-extrabold mb-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-600 text-transparent bg-clip-text">
             {project.title}
             {project.live && (
               <span className="ml-2 text-red-400 text-xs bg-red-500/20 py-1 px-3 rounded-full animate-pulse inline-flex items-center gap-1">
@@ -89,7 +89,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </h3>
 
           {/* Description */}
-          <p className="text-gray-400 mb-4 line-clamp-2">
+          <p className="text-gray-400 mb-4 line-clamp-3">
             {project.description}
           </p>
 
