@@ -1,10 +1,8 @@
 import { LinkedinIcon, Mail, GithubIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AboutSection } from "@/components/AboutSection";
-import ProjectCard from "@/components/ProjectCard";
 import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
-import { projects } from "../src/userData";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";

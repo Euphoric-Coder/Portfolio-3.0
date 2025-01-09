@@ -1,4 +1,4 @@
-import { Menu, Code2 } from "lucide-react";
+import { Menu, Code2, Download, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -6,8 +6,9 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Education", href: "#education" },
   { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -19,7 +20,9 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Code2 className="h-6 w-6 text-gray-300" />
-            <span className="text-lg font-semibold text-gray-300">Sagnik's Portfolio</span>
+            <span className="text-lg font-semibold text-gray-300">
+              Sagnik's Portfolio
+            </span>
           </div>
 
           {/* Navigation Links */}
@@ -39,8 +42,8 @@ export function Navbar() {
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button className="bg-gray-700 text-white hover:bg-gray-600 px-6 py-2 rounded-full">
-              Get Started
+            <Button className="flex gap-3 bg-gray-700 text-white hover:bg-gray-600 px-6 py-2 rounded-full">
+              Resume <ExternalLink /> 
             </Button>
           </div>
 
@@ -73,7 +76,7 @@ export function Navbar() {
                   Sign Up
                 </Button>
                 <Button className="bg-gray-700 text-white hover:bg-gray-600 mt-2 rounded-full">
-                  Get Started
+                  Resume <Download />
                 </Button>
               </nav>
             </SheetContent>
