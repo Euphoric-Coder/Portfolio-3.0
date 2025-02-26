@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { Project } from "../types";
@@ -7,8 +6,6 @@ import { projects } from "../userData";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  const project = projects;
 
   return (
     <section id="projects" className=""> 
