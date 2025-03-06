@@ -10,6 +10,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Project } from "../types";
+import { Badge } from "./ui/badge";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -66,8 +67,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           style={{ maxHeight: "90vh" }}
         >
           {/* Header Section */}
-          <div className="flex justify-between items-center p-4 bg-gradient-to-br from-purple-900 to-gray-900">
-            <h2 className="text-2xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
+          <div className="flex justify-between items-center p-4 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-900">
+            <h2 className="text-2xl font-extrabold bg-gradient-to-r from-gray-200 via-gray-400 to-gray-300 text-transparent bg-clip-text">
               {project.title}
             </h2>
             <motion.button
@@ -123,12 +124,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tags.map((tag, index) => (
-                <span
+                <Badge
                   key={index}
-                  className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm hover:bg-purple-500/30 hover:shadow-md hover:shadow-purple-500/50 transition"
+                  className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full hover:bg-gray-600 hover:scale-105 cursor-pointer transition-all duration-300"
                 >
                   {tag}
-                </span>
+                </Badge>
               ))}
             </div>
 

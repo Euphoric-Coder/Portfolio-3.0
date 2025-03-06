@@ -44,10 +44,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700/50 rounded-full backdrop-blur-md hover:bg-gray-600 shadow-md hover:shadow-gray-500/50 transition-all"
+                className="p-3 bg-purple-500/20 rounded-full backdrop-blur-md hover:bg-purple-500/30 transition-all"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Github className="w-6 h-6 text-white" />
+                <Github className="w-6 h-6 text-purple-300 hover:text-purple-500" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -55,10 +55,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700/50 rounded-full backdrop-blur-md hover:bg-gray-600 shadow-md hover:shadow-gray-500/50 transition-all"
+                className="p-3 bg-pink-500/20 rounded-full backdrop-blur-md hover:bg-pink-500/30  transition-all"
                 onClick={(e) => e.stopPropagation()}
               >
-                <ExternalLink className="w-6 h-6 text-white" />
+                <ExternalLink className="w-6 h-6 text-pink-300 hover:text-pink-400" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -66,10 +66,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={project.video}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700/50 rounded-full backdrop-blur-md hover:bg-gray-600 shadow-md hover:shadow-gray-500/50 transition-all duration-300"
+                className="p-3 bg-blue-500/20 rounded-full backdrop-blur-md hover:bg-blue-500/30  transition-all duration-300"
                 onClick={(e) => e.stopPropagation()}
               >
-                <Video className="w-6 h-6 text-white" />
+                <Video className="w-6 h-6 text-blue-300 hover:text-blue-500" />
               </motion.a>
             </div>
           </div>
