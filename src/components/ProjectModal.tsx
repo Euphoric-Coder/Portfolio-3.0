@@ -6,7 +6,6 @@ import {
   ExternalLink,
   Calendar,
   User,
-  Video,
   ChevronDown,
 } from "lucide-react";
 import { Project } from "../types";
