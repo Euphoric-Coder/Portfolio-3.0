@@ -40,10 +40,11 @@ export function HeroSection() {
           <Typewriter
             options={{
               strings: [
-                "Full Stack Developer passionate about Clean UI/UX Apps",
-                "Building Scalable Web Apps with AI and Modern UI/UX",
-                "Manage Your Budget",
-                "Analyze Your Expenses",
+                "Full Stack Developer",
+                "Cloud Computing & DevOps Enthusiast",
+                "Exploring Modern Tech & Innovation",
+                "Passionate About Clean UI/UX",
+                "Turning Ideas into Scalable Apps",
               ],
               autoStart: true,
               loop: true,
