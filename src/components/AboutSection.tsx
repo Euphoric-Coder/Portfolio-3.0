@@ -6,25 +6,24 @@ const aboutCards = [
     icon: User,
     title: "Who Am I?",
     description:
-      "A passionate full-stack developer specializing in crafting scalable web applications and seamless user experiences. With 5+ years in tech, I've worked with startups and enterprise-level companies to bring impactful ideas to life.",
+      "A Full-Stack Developer and Computer Science undergraduate, building modern web apps with MERN, Next.js, and AI integrations. Experienced in hackathons, internships, and creating impactful projects blending clean UI/UX with intelligent backends.",
   },
   {
     icon: Code,
     title: "My Tech Stack",
     description:
-      "Frontend: React, Next.js, TypeScript, Tailwind CSS\nBackend: Node.js, Python, FastAPI\nCloud: AWS, Docker, Kubernetes\nDatabases: PostgreSQL, MongoDB, Redis",
+      "Frontend: React, Next.js, TypeScript, Tailwind CSS\nBackend: Node.js, Python, FastAPI\nDatabases: PostgreSQL, MongoDB, ConvexDB\nAI/ML: LangChain, OpenAI, Replicate, Pinecone\nField of Interest: Full-Stack Development, HCI",
   },
   {
     icon: Rocket,
     title: "What Drives Me",
-    description:
-      "Building innovative solutions, mentoring aspiring developers, and staying ahead in tech trends. I thrive in fast-paced environments and love solving complex problems that make a difference.",
+    description: `I'm driven by the challenge of turning complex ideas into intuitive, impactful applications — blending clean design, modern full-stack engineering, and AI to build tools that solve real problems. What excites me is not just coding, but crafting experiences that are useful, scalable, and polished enough to stand out.`,
   },
   {
     icon: Book,
-    title: "Certifications & Education",
+    title: "Passion for Learning",
     description:
-      "Master's in Data Science, IIT Madras\nBachelor's in Computer Science, BITS Pilani\nAWS Certified Developer - Associate\nGoogle Cloud Professional Engineer",
+      "Passionate about full-stack development, cloud computing, and AI/ML, with experience building scalable web apps using MERN, Next.js, and LangChain. I enjoy exploring new frameworks, databases, and tools to turn ideas into impactful projects.",
   },
 ];
 

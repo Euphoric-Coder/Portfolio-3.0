@@ -1,16 +1,17 @@
 export interface Project {
+  id: number;
   title: string;
-  description: string;
-  longDescription: string;
+  date: string;
+  role: string;
   image: string;
   tags: string[];
+  shortDescription: string;
+  longDescription: string;
+  features: string[];
   github: string;
   demo: string;
   video: string;
-  date: string;
-  role: string;
-  features: string[];
-  live: boolean;
+  live?: boolean; // optional flag for "LIVE" badge
 }
 
 export interface SkillCategory {

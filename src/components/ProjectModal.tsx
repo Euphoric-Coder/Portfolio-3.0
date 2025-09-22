@@ -66,7 +66,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black border border-purple-500/20 rounded-2xl max-w-3xl w-full flex flex-col shadow-xl overflow-hidden"
           style={{ maxHeight: "90vh" }}
         >
-          {/* Header Section */}
+          {/* Header */}
           <div className="flex justify-between items-center p-4 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-900">
             <h2 className="text-2xl font-extrabold bg-gradient-to-r from-gray-200 via-gray-400 to-gray-300 text-transparent bg-clip-text">
               {project.title}
@@ -81,7 +81,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             </motion.button>
           </div>
 
-          {/* Image Section */}
+          {/* Image */}
           <div className="flex-shrink-0">
             <img
               src={project.image}
@@ -90,7 +90,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             />
           </div>
 
-          {/* Content Section */}
+          {/* Content */}
           <div
             id="modal-content"
             className="flex-1 overflow-y-auto p-6 relative"
@@ -151,7 +151,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             </div>
           </div>
 
-          {/* Footer Section */}
+          {/* Footer */}
           <div className="p-4 bg-gradient-to-br from-gray-800 to-gray-900 border-t border-purple-500/20 flex justify-center gap-4">
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -173,9 +173,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               className="flex items-center gap-2 px-5 py-2 bg-pink-500/20 rounded-full hover:bg-pink-500/30 transition-colors text-pink-300"
             >
               <ExternalLink className="w-5 h-5" />
-              Live Demo
+              Live Link
             </motion.a>
-            <motion.a
+            {/* <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href={project.video}
@@ -185,7 +185,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             >
               <Video className="w-5 h-5" />
               Demo Video
-            </motion.a>
+            </motion.a> */}
           </div>
         </motion.div>
       </motion.div>

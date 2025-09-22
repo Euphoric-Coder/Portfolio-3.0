@@ -2,12 +2,12 @@ import { GraduationCap } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const educationData = [
-  {
-    degree: "Bachelor's in Computer Science",
-    institution: "University of London",
-    year: "2025-2028",
-    description: "Graduated with First Class honors, focused on Web and Mobile Development.",
-  },
+  // {
+  //   degree: "Bachelor's in Computer Science",
+  //   institution: "University of London",
+  //   year: "2025-2028",
+  //   description: "Graduated with First Class honors, focused on Web and Mobile Development.",
+  // },
   {
     degree: "Bachelor's in Computer Science",
     institution: "Birla Institute of Technology and Science, Pilani",

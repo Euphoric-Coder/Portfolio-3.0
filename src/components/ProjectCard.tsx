@@ -33,8 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             transition={{ duration: 0.3 }}
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:brightness-75 transition-all duration-300"
+            className="w-full h-48 object-cover group-hover:brightness-75 transition-all duration-300"
           />
+
           {/* Action Buttons */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
             <div className="flex gap-4 mb-4">
@@ -55,22 +56,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-pink-500/20 rounded-full backdrop-blur-md hover:bg-pink-500/30  transition-all"
+                className="p-3 bg-pink-500/20 rounded-full backdrop-blur-md hover:bg-pink-500/30 transition-all"
                 onClick={(e) => e.stopPropagation()}
               >
                 <ExternalLink className="w-6 h-6 text-pink-300 hover:text-pink-400" />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 href={project.video}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-blue-500/20 rounded-full backdrop-blur-md hover:bg-blue-500/30  transition-all duration-300"
+                className="p-3 bg-blue-500/20 rounded-full backdrop-blur-md hover:bg-blue-500/30 transition-all"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Video className="w-6 h-6 text-blue-300 hover:text-blue-500" />
-              </motion.a>
+              </motion.a> */}
             </div>
           </div>
         </div>
@@ -90,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           {/* Description */}
           <p className="text-gray-400 mb-4 line-clamp-3">
-            {project.description}
+            {project.shortDescription}
           </p>
 
           {/* Tags */}
